@@ -1,0 +1,15 @@
+Name:		autogen
+Version:	0.0.1
+Cabal-Version:  >= 1.2
+Author:		Beerend Lauwers
+stability:     experimental
+Synopsis:	Code generator.
+
+Library
+  Build-Depends:	
+    base,
+    haskell-src-exts,
+    haskell-generate >= 0.2
+  Exposed-modules:
+    Language.Haskell.Generate.AutoGen,
+    Language.Haskell.Generate.AutoGen.Extra
