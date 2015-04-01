@@ -9,7 +9,9 @@ Library
   Build-Depends:	
     base,
     haskell-src-exts,
-    haskell-generate >= 0.2
+    haskell-generate >= 0.2,
+    transformers,
+    containers
   Exposed-modules:
     Language.Haskell.Generate.AutoGen,
     Language.Haskell.Generate.AutoGen.Extra
