@@ -7,7 +7,8 @@ import Language.Haskell.Exts.Pretty
 import Language.Haskell.Generate.Monad
 import qualified Data.Set as S
 
-mkIntLit i = Lit (Int i)
+mkIntLit :: Int -> Exp
+mkIntLit i = Lit (Int $ toInteger i)
 
 mkQName s = UnQual (Ident s)
 
